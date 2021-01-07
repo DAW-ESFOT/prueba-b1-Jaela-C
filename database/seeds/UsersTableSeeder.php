@@ -32,7 +32,7 @@ class UsersTableSeeder extends Seeder
                         Genre::find(1),
                         Genre::find(2),
                         Genre::find(3)
-                    ), $faker->word
+                    ), $faker->numberBetween(1, 3), false
                 )
             );
         }
